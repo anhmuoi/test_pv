@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "id": "118d8fc7-4139-43b2-b6fd-7135bee9a0e0",
+      "title": "title 1",
+      "completed": true,
+      "starred": true
+    },
+    {
+      "id": "284f32d3-9db1-4629-b62b-8b5c0dd8a4e9",
+      "title": "title 2",
+      "completed": false,
+      "starred": false
+    }
+   
+  ]
+}

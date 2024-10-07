@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 11,
+      "email": "anhmuoi200147@gmail.com",
+      "password": "Anhmuoi123!",
+      "name": "Nguyễn Anh Mười",
+      "phone": "0959631442",
+      "type": "admin",
+      "location": "ha noi"
+    },
+    {
+      "id": 12,
+      "email": "anhmuoi200146@gmail.com",
+      "password": "Anhmuoi123!",
+      "name": "Nguyễn Anh Mười",
+      "phone": "0959631444",
+      "type": "admin",
+      "location": "ha noi"
+    },
+    {
+      "id": 13,
+      "email": "anhmuoiabc@gmail.com",
+      "password": "Anhmuoi123!",
+      "name": "Nguyễn",
+      "phone": "0959631442",
+      "type": "admin",
+      "location": "ha nam"
+    },
+    {
+      "id": 14,
+      "email": "muoi.na198247@sis.hust.edu.vn",
+      "password": "Anhmuoi123!",
+      "name": "anh muoi",
+      "phone": "0983484721",
+      "type": "admin",
+      "location": "hà nội"
+    }
+  ]
+}
