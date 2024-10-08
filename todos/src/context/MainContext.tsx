@@ -46,6 +46,7 @@ export const MainProvider = ({ children }: Props) => {
         }
       } catch (error) {
         console.error('Error fetching todos:', error);
+        localStorage.setItem("todos", JSON.stringify(todos))
       }
     };
 
@@ -79,9 +80,20 @@ export const MainProvider = ({ children }: Props) => {
         setTodos((prevTodos) => [...prevTodos, createdTodo]); // Add the new todo to the existing list
       } else {
         console.error('Failed to add new todo:', response.status);
+        const newTodo = {
+          id: String(Math.random() * 5000),
+          title,
+          completed: false,
+          starred: false,
+        };
+        const orderTodos = [newTodo, ...todos];
+        orderStarAndComplete(orderTodos);
+        setTodos(orderTodos);
       }
     }
     } catch (error) {
+      
+      
       console.error('Error adding new todo:', error);
     }
   };
@@ -119,6 +131,13 @@ export const MainProvider = ({ children }: Props) => {
         }
       }
     } catch (error) {
+      
+      setTodos(
+        todos.map((todo) => {
+          if (todo.id === id) todo.title = text;
+          return todo;
+        })
+      );
       console.error('Error updating todo:', error);
     }
   };

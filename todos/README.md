@@ -27,6 +27,7 @@
 
 ## 🏗️ To build it
 
+note: run in node 14
 1. Clone this repo by running 
 2. `cd` into the `muoi-todos` folder and run `npm i` OR `yarn`.
 3. Run `npm start` OR `yarn start` to start the development server.
